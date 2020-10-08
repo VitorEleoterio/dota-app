@@ -1,11 +1,15 @@
 package br.com.eleoterio.dota2heroacademy
 
+import br.com.eleoterio.dota2heroacademy.Heros.AgilityHeros.AntiMage
+
 fun main(){
 
-    val axeHero = Hero()
-    axeHero.nome = "Axe"
-    axeHero.level = 10
 
-    println(axeHero.nome)
-    println(axeHero.level)
+   val antimage = AntiMage(15)
+
+
+
+    println("Magina: ${antimage.nome},${antimage.agility()}")
+
+
 }
