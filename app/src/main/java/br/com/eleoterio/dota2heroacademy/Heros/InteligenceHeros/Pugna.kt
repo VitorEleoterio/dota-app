@@ -1,6 +1,6 @@
 package br.com.eleoterio.dota2heroacademy.Heros.InteligenceHeros
 
-import br.com.eleoterio.dota2heroacademy.Hero
+import br.com.eleoterio.dota2heroacademy.Heros.Hero
 
 class Pugna(
     nome: String,

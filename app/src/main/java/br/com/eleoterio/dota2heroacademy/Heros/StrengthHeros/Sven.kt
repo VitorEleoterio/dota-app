@@ -1,6 +1,6 @@
 package br.com.eleoterio.dota2heroacademy.Heros.StrengthHeros
 
-import br.com.eleoterio.dota2heroacademy.Hero
+import br.com.eleoterio.dota2heroacademy.Heros.Hero
 
 class Sven(
     nome: String,

@@ -1,31 +1,24 @@
 package br.com.eleoterio.dota2heroacademy.Heros.StrengthHeros
 
-import br.com.eleoterio.dota2heroacademy.Hero
+import br.com.eleoterio.dota2heroacademy.Heros.Hero
+import br.com.eleoterio.dota2heroacademy.Heros.AgilityHeros.PrimaryAtribute
 
 class Abaddon(
-    nome: String,
-    level: Int,
-    agility: Float,
-    atackSpeed: Float,
-    armor: Float,
-    inteligence: Float,
-    manaRegeneration: Float,
-    maxMana: Float,
-    strength: Float,
-    hpRegeneration: Float,
-    maxHP: Float, atackDamage: Float
+    level: Int
 ): Hero(
-    nome,
-    level,
-    agility,
-    atackSpeed,
-    armor,
-    inteligence,
-    manaRegeneration,
-    maxMana,
-    strength,
-    hpRegeneration,
-    maxHP,
-    atackDamage
+    nome = "Abaddon",
+    level = level,
+    baseAgility = 24f,
+    atackSpeed = 100f,
+    baseArmor = 3f,
+    baseInteligence = 12f,
+    baseManaRegeneration = 0.6f,
+    baseMaxMana = 219f,
+    baseStrength = 23f,
+    hpRegeneration = 2.55f,
+    baseMaxHP = 660f,
+    baseAtackDamage = 29f,
+    primaryAtribute = PrimaryAtribute.Agility,
+    agilityPerLevel = 2.8f
 ) {
 }
