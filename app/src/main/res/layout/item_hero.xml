@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/CardViewHero"
+    android:layout_width="match_parent"
+    android:layout_height="130dp"
+    android:layout_margin="5dp"
+    app:cardBackgroundColor="@android:color/transparent"
+    tools:cardBackgroundColor="@color/inteligenceColor"
+    >
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/hero_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:maxLines="3"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:textColor="#610000"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintVertical_chainStyle="packed"
+        app:layout_constraintBottom_toTopOf="@id/hero_description"
+        tools:text="Axe"
+        style="@style/AppTextAppearance.ExtraBold"
+
+        />
+
+
+    <TextView
+        android:id="@+id/hero_description"
+        android:layout_width="wrap_content"
+        app:layout_constrainedWidth="true"
+        android:layout_margin="8dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:textSize="16sp"
+        android:textColor="#610000"
+        style="@style/AppTextAppearance.ExtraBold"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/hero_title"
+        app:layout_constraintStart_toEndOf="@+id/hero_image"
+        tools:text="Axe é geralmente jogado como um iniciador, com a sua potente desativação pode interromper a formação do inimigo e dar à sua equipe uma abertura nas lutas. Seu estilo de luta exige que fique muito perto e específico, pode provocar inimigos para atacá-lo com o seu Grito do Furioso, impedindo que se envolvam com seus companheiros de equipe. Um vez que tem atenção dos inimigos, pode anular aqueles que o atacam com a Contraespiral, que corta todos os inimigos perto com dano puro. Ele também tem retardo e dano com o passar do tempo na Fome de Batalha, que pode atormentar o inimigo ou força-lo a entrar na batalha, enquanto também, retarda a velocidade de movimento e aumentado a sua. Finalmente, tem a habilidade de remover incondicionalmente os inimigos enfraquecidos do campo de batalha, quando estão no limiar da Lâmina de Abate, enquanto simultaneamente aumenta a velocidade dos seus aliados. Um sanguinário e guerreiro indomável, a presença de Axe no campo de batalha é sentida por amigos e inimigos, dominando a atenção do inimigo onde quer que vá."
+        android:ellipsize="end"
+        app:layout_constrainedHeight="true"
+        app:layout_constraintHorizontal_chainStyle="packed"
+
+
+
+
+        />
+
+    <ImageView
+        android:id="@+id/hero_image"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_width="120sp"
+        android:layout_height="120sp"
+        android:layout_margin="8dp"
+        android:src="@drawable/axe_icon"
+        app:layout_constraintTop_toBottomOf="@+id/hero_title"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/hero_description"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+
+</androidx.cardview.widget.CardView>

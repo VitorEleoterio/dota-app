@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/CardViewHero"
+    android:layout_width="match_parent"
+    android:layout_height="130dp"
+    android:layout_margin="5dp"
+    app:cardBackgroundColor="@android:color/transparent"
+    >
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/hero_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:maxLines="3"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:textColor="@color/colorPrimaryDark"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintVertical_chainStyle="packed"
+            app:layout_constraintBottom_toTopOf="@id/hero_description"
+            tools:text="Ancient Aparicion"
+            style="@style/AppTextAppearance.ExtraBold"
+
+            />
+
+
+        <TextView
+            android:id="@+id/hero_description"
+            android:layout_width="wrap_content"
+            app:layout_constrainedWidth="true"
+            android:layout_margin="8dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:textSize="16sp"
+            android:textColor="@color/colorPrimaryDark"
+            style="@style/AppTextAppearance.ExtraBold"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/hero_title"
+            app:layout_constraintStart_toEndOf="@+id/hero_image"
+            tools:text="Kaldr, o Ancient Apparition, é um herói de Inteligência que ataca a longo alcance, geralmente jogado como um suporte. Embora seja frágil, esse lançador elemental de gelo possui habilidades semi-abundantes poderosas e um ultimate global doloroso. Pé Frio fere os inimigos e atordoará também, a não ser que se afastem da área, tornando a habilidade perigosa ao usar em conjunto com desativações de aliados. Vórtex de Gelo é uma habilidade de zoneamento com intervalo entre usos baixo, aplica um retardo pesado e amplificação de dano mágico aos inimigos próximos. Isso combina efetivamente com Toque Arrepiante, que beneficia Kaldr com dano mágico aumentado de grande alcance. Seu ultimate, Explosão de Gelo, é uma das habilidades mais devastadoras do jogo, com um alcance global e um raio que aumenta quanto mais a explosão percorre. Todos os inimigos atingidos pela explosão sofrem um dano pesado, são temporariamente impedidos de curar ou de regenerar, e instantaneamente perecem se suas vidas estão muito baixas. Ancient Apparition pode ser devastador em lutas de equipe, e faz um excelente contra-ataque aos heróis que dependem de cura e regeneração."
+            android:ellipsize="end"
+            app:layout_constrainedHeight="true"
+            app:layout_constraintHorizontal_chainStyle="packed"
+
+
+
+
+            />
+
+        <ImageView
+            android:id="@+id/hero_image"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_width="120sp"
+            android:layout_height="120sp"
+            android:layout_margin="8dp"
+            android:src="@drawable/ancient_Apparition_icon"
+            app:layout_constraintTop_toBottomOf="@+id/hero_title"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/hero_description"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+
+</androidx.cardview.widget.CardView>

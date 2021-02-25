@@ -1,4 +1,13 @@
 <resources>
     <string name="app_name">Dota2 Hero Academy</string>
-    <string name="Axe">Axe</string>
+    <string name="splash_title">Dota 2\nHero Academy</string>
+
+    <string name="teste_fragment_strength">Teste Fragment Força</string>
+    <string name="teste_fragment_agility">Teste Fragment Agilidade</string>
+    <string name="teste_fragment_inteligence">Teste Fragment Inteligence</string>
+
+
+    <string name="tab_name_strength">Força</string>
+    <string name="tab_name_agility">Agilidade</string>
+    <string name="tab_name_inteligence">Inteligence</string>
 </resources>

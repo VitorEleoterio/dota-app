@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/smokeback_ground"
+    tools:context="br.com.eleoterio.dota2heroacademy.activity.SplashActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:text="@string/splash_title"
+        style="@style/AppTextAppearance.ExtraBold"
+        android:gravity="center"
+        android:textSize="35sp"
+        android:textColor="@color/colorPrimary"
+        app:layout_constraintBottom_toTopOf="@id/logoGroup"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+       />
+
+    <ImageView
+        android:id="@+id/logoGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/group"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        />
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyleHorizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="32dp"
+        android:layout_marginHorizontal="30sp"
+        android:progressBackgroundTint="@color/secundaryColor"
+        android:progressTint="@color/vermelhoLogo"
+        android:radius="5dip"
+        android:scaleY="3"
+
+
+
+
+
+
+        />
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

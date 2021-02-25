@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#201E1E"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <TextView
+        android:layout_marginTop="100dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+
+        />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recleViewAgility"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:listitem="@layout/item__hero__agility"
+        tools:itemCount="4"
+
+
+        />
+
+
+</LinearLayout>

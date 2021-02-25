@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/CardViewHero"
+    android:layout_width="match_parent"
+    android:layout_height="130dp"
+    android:layout_margin="5dp"
+    app:cardBackgroundColor="@android:color/transparent"
+    tools:cardBackgroundColor="@color/inteligenceColor"
+    >
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/hero_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:maxLines="3"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:textColor="#043C18"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintVertical_chainStyle="packed"
+            app:layout_constraintBottom_toTopOf="@id/hero_description"
+            tools:text="Medusa"
+            style="@style/AppTextAppearance.ExtraBold"
+
+            />
+
+
+        <TextView
+            android:id="@+id/hero_description"
+            android:layout_width="wrap_content"
+            app:layout_constrainedWidth="true"
+            android:layout_margin="8dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:textSize="16sp"
+            android:textColor="#043C18"
+            style="@style/AppTextAppearance.ExtraBold"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/hero_title"
+            app:layout_constraintStart_toEndOf="@+id/hero_image"
+            tools:text="Medusa the Gorgon é um Herói de agilidade á Distancia. Muito dependente de item, ela atua como carry duro que potencialmente pode derrubar equipes inteiras de uma só vez. Disparo Dividido permite que seus ataques acertem vários alvos, aumentando muito a potência do dano ganho de itens. Com Serpente Mística, Medusa pode pressionar inimigos que estão na lane, roubando e reembolsando parte da mana gasta no custo da mesma, tornando-se uma excelente ferramenta de farm e para perturbar os inimigos. Escudo de Mana a protege de danos inimigos nas batalhas, e, com a ajuda de seus itens, faz Medusa demorar muito mais a morrer. Olhar Petrificante atua como um fantástico mecanismo de defesa tanto contra ganks ou inicializações, com efeitos paralisantes sobre todos os que ousam enfrentar a Gorgon."
+            android:ellipsize="end"
+            app:layout_constrainedHeight="true"
+            app:layout_constraintHorizontal_chainStyle="packed"
+
+
+
+
+            />
+
+        <ImageView
+            android:id="@+id/hero_image"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_width="120sp"
+            android:layout_height="120sp"
+            android:layout_margin="8dp"
+            android:src="@drawable/medusa_icon"
+            app:layout_constraintTop_toBottomOf="@+id/hero_title"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/hero_description"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+
+</androidx.cardview.widget.CardView>

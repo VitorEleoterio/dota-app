@@ -1,6 +1,6 @@
 package br.com.eleoterio.dota2heroacademy
 
-import br.com.eleoterio.dota2heroacademy.Heros.AgilityHeros.AntiMage
+import br.com.eleoterio.dota2heroacademy.heros.agilityHeros.AntiMage
 
 fun main(){
 
@@ -19,3 +19,5 @@ fun main(){
 
 
 }
+
+
