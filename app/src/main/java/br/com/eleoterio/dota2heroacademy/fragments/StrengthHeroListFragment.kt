@@ -5,8 +5,12 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
+import androidx.recyclerview.widget.LinearLayoutManager
+import androidx.recyclerview.widget.RecyclerView
 import br.com.eleoterio.dota2heroacademy.R
+import br.com.eleoterio.dota2heroacademy.heros.Hero
 import br.com.eleoterio.dota2heroacademy.heros.HeroList
+import kotlinx.android.synthetic.*
 
 class StrengthHeroListFragment: Fragment() {
     override fun onCreateView(
@@ -22,5 +26,8 @@ class StrengthHeroListFragment: Fragment() {
         super.onViewCreated(view, savedInstanceState)
 
         val strengthHeroList  = HeroList().strengthHeros
+        val strengthRecycleView = view.findViewById<RecyclerView>(R.id.recleViewStrength)
+        strengthRecycleView.adapter = HeroCardListAdapter(strengthHeroList)
+        strengthRecycleView.layoutManager = LinearLayoutManager(context)
     }
 }

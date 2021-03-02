@@ -22,7 +22,8 @@ abstract class Hero(
     val integigencePerLevel: Float,
     val multStrength: Float,
     val multAgility: Float,
-    val multInteligence: Float
+    val multInteligence: Float,
+    val image: Int = 1
 ) {
 
 

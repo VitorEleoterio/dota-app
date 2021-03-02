@@ -1,5 +1,8 @@
 package br.com.eleoterio.dota2heroacademy.heros
 
+import android.os.Bundle
+import androidx.recyclerview.widget.RecyclerView
+import br.com.eleoterio.dota2heroacademy.R
 import br.com.eleoterio.dota2heroacademy.heros.agilityHeros.*
 import br.com.eleoterio.dota2heroacademy.heros.atributes.PrimaryAtribute
 import br.com.eleoterio.dota2heroacademy.heros.inteligenceHeros.*
@@ -137,4 +140,10 @@ class HeroList {
     val strengthHeros = heroes.filter { it.primaryAtribute == PrimaryAtribute.Strength }
     val intelligenceHeros = heroes.filter { it.primaryAtribute == PrimaryAtribute.Inteligence }
     val agilityHeros = heroes.filter { it.primaryAtribute == PrimaryAtribute.Agility }
+
+
+
+
+
+
 }

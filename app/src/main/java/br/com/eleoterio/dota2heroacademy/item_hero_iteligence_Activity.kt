@@ -3,7 +3,7 @@ package br.com.eleoterio.dota2heroacademy
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 
-class item_hero_iteligence : AppCompatActivity() {
+class item_hero_iteligence_Activity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.item_hero_iteligence)
