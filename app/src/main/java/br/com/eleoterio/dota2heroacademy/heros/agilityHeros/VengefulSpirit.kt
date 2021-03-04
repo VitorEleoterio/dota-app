@@ -6,7 +6,7 @@ import br.com.eleoterio.dota2heroacademy.heros.Hero
 class VengefulSpirit(
     level: Int = 1
 ): Hero(
-    nome = "Anti Mage",
+    nome = "Vengeful Spirit",
     level = level,
     baseAgility = 24f,
     atackSpeed = 100f,

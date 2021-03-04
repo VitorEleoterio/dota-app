@@ -27,7 +27,7 @@ class StrengthHeroListFragment: Fragment() {
 
         val strengthHeroList  = HeroList().strengthHeros
         val strengthRecycleView = view.findViewById<RecyclerView>(R.id.recleViewStrength)
-        strengthRecycleView.adapter = HeroCardListAdapter(strengthHeroList)
         strengthRecycleView.layoutManager = LinearLayoutManager(context)
+        strengthRecycleView.adapter = HeroCardListAdapter(strengthHeroList)
     }
 }

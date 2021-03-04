@@ -3,12 +3,11 @@
     <color name="colorPrimary">#DBA63E</color>
     <color name="colorPrimaryDark">#3700B3</color>
     <color name="colorAccent">#03DAC5</color>
-    <color name="vermelhoLogo">#D35151</color>
-    <color name="secundaryColor">#C69942</color>
+    <color name="secundaryColor">#C1261B</color>
+    <color name="secundaryColorLigth">#9C27B0</color>
     <color name="agilityColor">#39E4D4</color>
-    <color name="strengthColor">#4DFAFAFB</color>
+    <color name="strengthColor">#FFD35151</color>
     <color name="inteligenceColor">#A0D6FA</color>
-    <color name="ifoodRed">#FF7752</color>
-    <color name="ifoodGreen">#50A773</color>
-    <color name="ifoodBlue">#33B5E5</color>
+    <color name="backgroundFragment">#404345</color>
+    <color name="colorWhite">#F9FDFF</color>
 </resources>

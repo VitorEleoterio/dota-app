@@ -5,6 +5,8 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
+import androidx.recyclerview.widget.LinearLayoutManager
+import androidx.recyclerview.widget.RecyclerView
 import br.com.eleoterio.dota2heroacademy.R
 import br.com.eleoterio.dota2heroacademy.heros.HeroList
 
@@ -23,5 +25,8 @@ class AgilityHeroListFragment: Fragment() {
         super.onViewCreated(view, savedInstanceState)
 
         val agilityHeroList  = HeroList().agilityHeros
+        val strengthRecycleView = view.findViewById<RecyclerView>(R.id.recleViewAgility)
+        strengthRecycleView.layoutManager = LinearLayoutManager(context)
+        strengthRecycleView.adapter = HeroCardListAdapter(agilityHeroList)
     }
 }

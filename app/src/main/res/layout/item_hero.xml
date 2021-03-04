@@ -10,13 +10,12 @@
     android:layout_marginRight="18dp"
     app:cardCornerRadius="18dp"
 
-
     >
 
 
 
     <ImageView
-
+        android:id="@+id/background_hero"
         android:src="@drawable/gradient_color_strength"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -114,12 +113,12 @@
             />
 
         <ImageView
-
+            android:id="@+id/circle_image"
             android:layout_width="0dp"
             android:layout_height="0dp"
             android:scaleType="fitXY"
             android:src="@drawable/circle_image"
-            android:tint="@color/vermelhoLogo"
+            android:tint="@color/strengthColor"
             app:layout_constraintBottom_toBottomOf="@id/hero_image"
             app:layout_constraintEnd_toEndOf="@+id/hero_image"
             app:layout_constraintStart_toStartOf="@+id/hero_image"

@@ -6,7 +6,7 @@ import br.com.eleoterio.dota2heroacademy.heros.Hero
 class ShadowFiend(
     level: Int = 1
 ): Hero(
-    nome = "Anti Mage",
+    nome = "Shadow Fiend",
     level = level,
     baseAgility = 24f,
     atackSpeed = 100f,

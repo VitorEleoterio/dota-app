@@ -6,7 +6,7 @@ import br.com.eleoterio.dota2heroacademy.heros.Hero
 class FacelessVoid(
     level: Int = 1
 ): Hero(
-    nome = "Anti Mage",
+    nome = "Faceless Void",
     level = level,
     baseAgility = 24f,
     atackSpeed = 100f,

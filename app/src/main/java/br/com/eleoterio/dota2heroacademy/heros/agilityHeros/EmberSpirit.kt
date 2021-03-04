@@ -6,7 +6,7 @@ import br.com.eleoterio.dota2heroacademy.heros.Hero
 class EmberSpirit(
     level: Int = 1
 ): Hero(
-    nome = "Anti Mage",
+    nome = "Ember Spirit",
     level = level,
     baseAgility = 24f,
     atackSpeed = 100f,

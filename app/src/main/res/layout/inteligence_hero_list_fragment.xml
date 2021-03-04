@@ -3,18 +3,12 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    xmlns:tools="http://schemas.android.com/tools">
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/smokeback_ground">
 
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:gravity="center_horizontal"
-        android:layout_marginTop="100dp"
-
-        />
 
     <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/recleViewAgility"
+        android:id="@+id/recleViewInteligence"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         tools:itemCount="4"

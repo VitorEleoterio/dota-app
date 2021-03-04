@@ -19,7 +19,7 @@ class Rubick(
     hpRegeneration = 2.55f,
     baseMaxHP = 660f,
     baseAtackDamage = 29f,
-    primaryAtribute = PrimaryAtribute.Agility,
+    primaryAtribute = PrimaryAtribute.Inteligence,
     agilityPerLevel = 2.8f,
     strengthPerLevel = 1f,
     integigencePerLevel = 2f,

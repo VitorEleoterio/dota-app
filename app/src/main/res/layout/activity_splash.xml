@@ -42,7 +42,7 @@
         android:layout_marginBottom="32dp"
         android:layout_marginHorizontal="30sp"
         android:progressBackgroundTint="@color/secundaryColor"
-        android:progressTint="@color/vermelhoLogo"
+        android:progressTint="@color/strengthColor"
         android:radius="5dip"
         android:scaleY="3"
 

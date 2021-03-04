@@ -2,8 +2,7 @@ package br.com.eleoterio.dota2heroacademy.fragments
 
 import androidx.fragment.app.*
 import androidx.viewpager2.adapter.FragmentStateAdapter
-
-
+import br.com.eleoterio.dota2heroacademy.R
 
 
 class HeroListFragmentAdapter(fragmentActivity: FragmentActivity): FragmentStateAdapter(fragmentActivity) {

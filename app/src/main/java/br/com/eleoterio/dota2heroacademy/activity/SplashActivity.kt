@@ -7,7 +7,7 @@ import android.os.Handler
 import android.widget.ProgressBar
 import br.com.eleoterio.dota2heroacademy.R
 
-private const val SPLASH_TIME = 5000L
+private const val SPLASH_TIME = 1500L
 
 class SplashActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
