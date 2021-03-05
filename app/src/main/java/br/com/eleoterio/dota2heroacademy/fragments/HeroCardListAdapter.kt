@@ -28,7 +28,7 @@ class HeroCardListAdapter(
                 PrimaryAtribute.Agility -> R.drawable.gradient_color_agility
             }
 
-
+            itemView.findViewById<TextView>(R.id.hero_level).text = hero.level.toString()
             itemView.findViewById<TextView>(R.id.hero_inteligence_atribute).text = hero.baseInteligence.toString()
             itemView.findViewById<TextView>(R.id.hero_agility_atribute).text = hero.baseAgility.toString()
             itemView.findViewById<TextView>(R.id.hero_strength_atribute).text = hero.baseStrength.toString()
