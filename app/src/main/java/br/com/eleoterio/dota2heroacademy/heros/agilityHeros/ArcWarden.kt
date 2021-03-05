@@ -1,11 +1,13 @@
 package br.com.eleoterio.dota2heroacademy.heros.agilityHeros
 
+import br.com.eleoterio.dota2heroacademy.R
 import br.com.eleoterio.dota2heroacademy.heros.atributes.PrimaryAtribute
 import br.com.eleoterio.dota2heroacademy.heros.Hero
 
 class ArcWarden(
     level: Int = 1
 ): Hero(
+    image = R.drawable.arc_warden_icon,
     nome = "Arc Warden",
     level = level,
     baseAgility = 24f,

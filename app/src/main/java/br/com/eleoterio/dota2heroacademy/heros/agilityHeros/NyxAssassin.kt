@@ -1,11 +1,13 @@
 package br.com.eleoterio.dota2heroacademy.heros.agilityHeros
 
+import br.com.eleoterio.dota2heroacademy.R
 import br.com.eleoterio.dota2heroacademy.heros.atributes.PrimaryAtribute
 import br.com.eleoterio.dota2heroacademy.heros.Hero
 
 class NyxAssassin(
     level: Int = 1
 ): Hero(
+    image = R.drawable.nyx_assassin_icon,
     nome = "Nyx Assassin",
     level = level,
     baseAgility = 24f,

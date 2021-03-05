@@ -28,21 +28,11 @@ class HeroCardListAdapter(
                 PrimaryAtribute.Agility -> R.drawable.gradient_color_agility
             }
 
-            val imageIcon = when(hero.primaryAtribute){
-                PrimaryAtribute.Strength -> R.drawable.axe_icon
-                PrimaryAtribute.Inteligence -> R.drawable.ancient_apparition_icon
-                PrimaryAtribute.Agility -> R.drawable.medusa_icon
-            }
 
-            val circleImage = when(hero.primaryAtribute){
-                PrimaryAtribute.Strength -> ContextCompat.getColor(context, R.color.strengthColor)
-                PrimaryAtribute.Inteligence -> ContextCompat.getColor(context, R.color.inteligenceColor)
-                PrimaryAtribute.Agility -> ContextCompat.getColor(context, R.color.agilityColor)
-            }
-
-            val logoBackground = itemView.findViewById<ImageView>(R.id.circle_image)
-            ImageViewCompat.setImageTintList(logoBackground, ColorStateList.valueOf(circleImage))
-            itemView.findViewById<ImageView>(R.id.hero_image).setImageResource(imageIcon)
+            itemView.findViewById<TextView>(R.id.hero_inteligence_atribute).text = hero.baseInteligence.toString()
+            itemView.findViewById<TextView>(R.id.hero_agility_atribute).text = hero.baseAgility.toString()
+            itemView.findViewById<TextView>(R.id.hero_strength_atribute).text = hero.baseStrength.toString()
+            itemView.findViewById<ImageView>(R.id.hero_image).setImageResource(hero.image)
             itemView.findViewById<ImageView>(R.id.background_hero).setImageResource(drawable)
            itemView.findViewById<TextView>(R.id.hero_title).text = hero.nome
         }

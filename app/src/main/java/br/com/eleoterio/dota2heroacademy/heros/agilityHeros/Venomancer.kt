@@ -1,11 +1,13 @@
 package br.com.eleoterio.dota2heroacademy.heros.agilityHeros
 
+import br.com.eleoterio.dota2heroacademy.R
 import br.com.eleoterio.dota2heroacademy.heros.atributes.PrimaryAtribute
 import br.com.eleoterio.dota2heroacademy.heros.Hero
 
 class Venomancer(
     level: Int = 1
 ): Hero(
+    image = R.drawable.venomancer_icon,
     nome = "Venomancer",
     level = level,
     baseAgility = 24f,

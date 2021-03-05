@@ -1,11 +1,13 @@
 package br.com.eleoterio.dota2heroacademy.heros.agilityHeros
 
+import br.com.eleoterio.dota2heroacademy.R
 import br.com.eleoterio.dota2heroacademy.heros.atributes.PrimaryAtribute
 import br.com.eleoterio.dota2heroacademy.heros.Hero
 
 class BountyHunter(
     level: Int = 1
 ): Hero(
+    image = R.drawable.bounty_hunter_icon,
     nome = "Bounty Hunter",
     level = level,
     baseAgility = 24f,

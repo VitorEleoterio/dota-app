@@ -1,11 +1,13 @@
 package br.com.eleoterio.dota2heroacademy.heros.agilityHeros
 
+import br.com.eleoterio.dota2heroacademy.R
 import br.com.eleoterio.dota2heroacademy.heros.atributes.PrimaryAtribute
 import br.com.eleoterio.dota2heroacademy.heros.Hero
 
 class Viper(
     level: Int = 1
 ): Hero(
+    image = R.drawable.viper_icon,
     nome = "Viper",
     level = level,
     baseAgility = 24f,

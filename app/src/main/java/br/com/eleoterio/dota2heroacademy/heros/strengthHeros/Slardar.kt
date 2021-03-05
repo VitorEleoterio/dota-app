@@ -1,5 +1,6 @@
 package br.com.eleoterio.dota2heroacademy.heros.strengthHeros
 
+import br.com.eleoterio.dota2heroacademy.R
 import br.com.eleoterio.dota2heroacademy.heros.atributes.PrimaryAtribute
 import br.com.eleoterio.dota2heroacademy.heros.Hero
 
@@ -7,8 +8,8 @@ class Slardar(
 
     level: Int = 1
 ): Hero(
-    nome = "Slardar" +
-            "",
+    image = R.drawable.slardar_icon,
+    nome = "Slardar",
     level = level,
     baseAgility = 24f,
     atackSpeed = 100f,

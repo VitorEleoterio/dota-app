@@ -1,5 +1,6 @@
 package br.com.eleoterio.dota2heroacademy.heros.inteligenceHeros
 
+import br.com.eleoterio.dota2heroacademy.R
 import br.com.eleoterio.dota2heroacademy.heros.atributes.PrimaryAtribute
 import br.com.eleoterio.dota2heroacademy.heros.Hero
 
@@ -7,6 +8,7 @@ class Grimstroke(
 
     level: Int = 1
 ): Hero(
+    image = R.drawable.grimstroke_icon,
     nome = "Grimstroke",
     level = level,
     baseAgility = 24f,

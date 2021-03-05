@@ -1,5 +1,6 @@
 package br.com.eleoterio.dota2heroacademy.heros.strengthHeros
 
+import br.com.eleoterio.dota2heroacademy.R
 import br.com.eleoterio.dota2heroacademy.heros.Hero
 import br.com.eleoterio.dota2heroacademy.heros.atributes.PrimaryAtribute
 
@@ -7,6 +8,7 @@ class Abaddon(
 
     level: Int = 1
 ): Hero(
+    image = R.drawable.abaddon_icon,
     nome = "Abaddon",
     level = level,
     baseAgility = 24f,

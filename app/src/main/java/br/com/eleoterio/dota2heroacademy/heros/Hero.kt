@@ -1,5 +1,6 @@
 package br.com.eleoterio.dota2heroacademy.heros
 
+import br.com.eleoterio.dota2heroacademy.R
 import br.com.eleoterio.dota2heroacademy.heros.atributes.PrimaryAtribute
 import br.com.eleoterio.dota2heroacademy.heros.atributes.PrimaryAtribute.*
 
@@ -23,7 +24,7 @@ abstract class Hero(
     val multStrength: Float,
     val multAgility: Float,
     val multInteligence: Float,
-    val image: Int = 1
+    val image: Int = R.drawable.anti_mage_icon
 ) {
 
 

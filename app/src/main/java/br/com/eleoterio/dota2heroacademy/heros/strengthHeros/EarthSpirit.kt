@@ -1,5 +1,6 @@
 package br.com.eleoterio.dota2heroacademy.heros.strengthHeros
 
+import br.com.eleoterio.dota2heroacademy.R
 import br.com.eleoterio.dota2heroacademy.heros.atributes.PrimaryAtribute
 import br.com.eleoterio.dota2heroacademy.heros.Hero
 
@@ -7,6 +8,7 @@ class EarthSpirit(
 
     level: Int = 1
 ): Hero(
+    image = R.drawable.earth_spirit_icon,
     nome = "Earth Spirit",
     level = level,
     baseAgility = 24f,

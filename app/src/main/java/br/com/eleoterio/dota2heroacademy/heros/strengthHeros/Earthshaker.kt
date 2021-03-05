@@ -1,5 +1,6 @@
 package br.com.eleoterio.dota2heroacademy.heros.strengthHeros
 
+import br.com.eleoterio.dota2heroacademy.R
 import br.com.eleoterio.dota2heroacademy.heros.atributes.PrimaryAtribute
 import br.com.eleoterio.dota2heroacademy.heros.Hero
 
@@ -7,6 +8,7 @@ class Earthshaker(
 
     level: Int = 1
 ): Hero(
+    image = R.drawable.earthshaker_icon,
     nome = "Earthshaker",
     level = level,
     baseAgility = 24f,

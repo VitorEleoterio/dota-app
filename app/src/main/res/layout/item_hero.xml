@@ -46,7 +46,7 @@
 
 
         <TextView
-            android:id="@+id/hero_strength"
+            android:id="@+id/hero_strength_atribute"
             style="@style/AppTextAppearance.ExtraBold"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -57,8 +57,8 @@
             android:textSize="16sp"
             android:textStyle="bold"
             app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toStartOf="@+id/hero_inteligence"
-            app:layout_constraintStart_toEndOf="@+id/hero_agility"
+            app:layout_constraintEnd_toStartOf="@+id/hero_inteligence_atribute"
+            app:layout_constraintStart_toEndOf="@+id/hero_agility_atribute"
             app:layout_constraintTop_toBottomOf="@+id/hero_title"
             tools:text="120"
             android:layout_marginStart="16dp"
@@ -69,15 +69,15 @@
             />
 
         <TextView
-            android:id="@+id/hero_agility"
+            android:id="@+id/hero_agility_atribute"
             style="@style/AppTextAppearance.ExtraBold"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:drawableTop="@drawable/agility_attribute_symbol"
             android:gravity="center"
             android:textColor="@android:color/white"
-            app:layout_constraintBottom_toBottomOf="@+id/hero_strength"
-            app:layout_constraintEnd_toStartOf="@+id/hero_strength"
+            app:layout_constraintBottom_toBottomOf="@+id/hero_strength_atribute"
+            app:layout_constraintEnd_toStartOf="@+id/hero_strength_atribute"
             app:layout_constraintHorizontal_chainStyle="packed"
             app:layout_constraintStart_toEndOf="@+id/hero_image"
             app:layout_constraintHorizontal_bias="0.2"
@@ -86,25 +86,26 @@
             />
 
         <TextView
-            android:id="@+id/hero_inteligence"
+            android:id="@+id/hero_inteligence_atribute"
             style="@style/AppTextAppearance.ExtraBold"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:drawableTop="@drawable/intelligence_attribute_symbol"
             android:gravity="center"
             android:textColor="@android:color/white"
-            app:layout_constraintBottom_toBottomOf="@+id/hero_strength"
+            app:layout_constraintBottom_toBottomOf="@+id/hero_strength_atribute"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toEndOf="@+id/hero_strength"
+            app:layout_constraintStart_toEndOf="@+id/hero_strength_atribute"
             tools:text="30" />
 
 
-        <ImageView
+
+
+        <de.hdodenhof.circleimageview.CircleImageView
             android:id="@+id/hero_image"
             android:layout_width="60dp"
             android:layout_height="60dp"
-            android:scaleType="fitXY"
-            android:src="@drawable/axe_icon"
+            android:src="@drawable/anti_mage_icon"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             android:layout_marginTop="30dp"
@@ -112,17 +113,8 @@
 
             />
 
-        <ImageView
-            android:id="@+id/circle_image"
-            android:layout_width="0dp"
-            android:layout_height="0dp"
-            android:scaleType="fitXY"
-            android:src="@drawable/circle_image"
-            android:tint="@color/strengthColor"
-            app:layout_constraintBottom_toBottomOf="@id/hero_image"
-            app:layout_constraintEnd_toEndOf="@+id/hero_image"
-            app:layout_constraintStart_toStartOf="@+id/hero_image"
-            app:layout_constraintTop_toTopOf="@+id/hero_image" />
+
+
 
 
     </androidx.constraintlayout.widget.ConstraintLayout>

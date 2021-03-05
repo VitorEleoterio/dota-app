@@ -1,11 +1,13 @@
 package br.com.eleoterio.dota2heroacademy.heros.inteligenceHeros
 
+import br.com.eleoterio.dota2heroacademy.R
 import br.com.eleoterio.dota2heroacademy.heros.atributes.PrimaryAtribute
 import br.com.eleoterio.dota2heroacademy.heros.Hero
 
 class AncientApparition(
     level: Int = 1
 ): Hero(
+    image = R.drawable.ancient_apparition_icon,
     nome = "Ancient Apparition",
     level = level,
     baseAgility = 24f,

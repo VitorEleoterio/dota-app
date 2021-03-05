@@ -6,13 +6,17 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     >
 
+
+
     <com.google.android.material.tabs.TabLayout
         android:id="@+id/atributesTablayout"
         android:layout_width="match_parent"
         android:layout_height="64dp"
-        android:background="@color/secundaryColor"
+        android:background="#E15349"
         app:layout_constraintTop_toTopOf="parent"
         app:tabMode="fixed"
+
+
         />
 
     <androidx.viewpager2.widget.ViewPager2
