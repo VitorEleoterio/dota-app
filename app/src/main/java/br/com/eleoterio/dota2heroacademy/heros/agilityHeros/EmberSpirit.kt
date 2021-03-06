@@ -23,10 +23,7 @@ class EmberSpirit(
     primaryAtribute = PrimaryAtribute.Agility,
     agilityPerLevel = 2.8f,
     strengthPerLevel = 10f,
-    integigencePerLevel = 1f,
-    multStrength = 3f,
-    multAgility = 3f,
-    multInteligence = 3f
+    intelligencePerLevel = 1f
 
 ) {
 }

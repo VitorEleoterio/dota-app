@@ -10,7 +10,7 @@
         android:id="@+id/recleViewAgility"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        tools:listitem="@layout/item__hero__agility"
+        tools:listitem="@layout/item_hero"
         tools:itemCount="4"
 
 

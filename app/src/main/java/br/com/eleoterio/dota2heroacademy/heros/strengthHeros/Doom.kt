@@ -25,9 +25,7 @@ class Doom(
     primaryAtribute = PrimaryAtribute.Strength,
     agilityPerLevel = 2.8f,
     strengthPerLevel = 1f,
-    integigencePerLevel = 2f,
-    multStrength = 3f,
-    multAgility = 2f,
-    multInteligence = 3f
+    intelligencePerLevel = 2f
+
 ) {
 }

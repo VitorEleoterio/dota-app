@@ -10,4 +10,5 @@
     <color name="inteligenceColor">#A0D6FA</color>
     <color name="backgroundFragment">#404345</color>
     <color name="colorWhite">#F9FDFF</color>
+    <color name="numberPickerColor">#9A1209</color>
 </resources>

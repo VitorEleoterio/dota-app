@@ -113,18 +113,21 @@
 
             />
 
-        <TextView
+
+
+        <NumberPicker
             android:id="@+id/hero_level"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            app:layout_constraintTop_toTopOf="@+id/hero_image"
+            android:layout_width="140dp"
+            android:layout_height="50dp"
+            app:layout_constraintTop_toBottomOf="@+id/hero_title"
             app:layout_constraintStart_toEndOf="@+id/hero_inteligence_atribute"
-            android:layout_marginStart="52dp"
-            android:textColor="@android:color/white"
-            android:textSize="40sp"
+            app:layout_constraintEnd_toEndOf="parent"
             android:textStyle="bold"
+            android:scrollbarSize="40dp"
             style="@style/AppTextAppearance.ExtraBold"
-            android:text="1"/>
+
+
+             />
 
 
 

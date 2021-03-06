@@ -7,10 +7,6 @@ fun main(){
 
    val antimage = AntiMage(10)
 
-  println("Nome: ${antimage.nome}")
- println("armadura: ${antimage.armor()}")
- println("atack speed: ${antimage.atackDamage()}")
- println("damage: ${antimage.atackDamage()}")
 
 
 

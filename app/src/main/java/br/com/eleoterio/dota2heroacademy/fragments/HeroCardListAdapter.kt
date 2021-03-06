@@ -5,6 +5,7 @@ import android.media.Image
 import android.view.View
 import android.view.ViewGroup
 import android.widget.ImageView
+import android.widget.NumberPicker
 import android.widget.TextView
 import androidx.core.content.ContextCompat
 import androidx.core.widget.ImageViewCompat
@@ -15,26 +16,41 @@ import br.com.eleoterio.dota2heroacademy.heros.atributes.PrimaryAtribute
 
 class HeroCardListAdapter(
     private val heroList: List<Hero>
-): RecyclerView.Adapter<HeroCardListAdapter.HeroCardViewHolder>() {
+) : RecyclerView.Adapter<HeroCardListAdapter.HeroCardViewHolder>() {
 
     class HeroCardViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
 
         fun bind(hero: Hero) {
             val context = itemView.context
 
-            val drawable = when(hero.primaryAtribute) {
+            val drawable = when (hero.primaryAtribute) {
                 PrimaryAtribute.Strength -> R.drawable.gradient_color_strength
                 PrimaryAtribute.Inteligence -> R.drawable.gradient_color_inteligence
                 PrimaryAtribute.Agility -> R.drawable.gradient_color_agility
             }
 
-            itemView.findViewById<TextView>(R.id.hero_level).text = hero.level.toString()
-            itemView.findViewById<TextView>(R.id.hero_inteligence_atribute).text = hero.baseInteligence.toString()
-            itemView.findViewById<TextView>(R.id.hero_agility_atribute).text = hero.baseAgility.toString()
-            itemView.findViewById<TextView>(R.id.hero_strength_atribute).text = hero.baseStrength.toString()
+            var levelStrength = hero.strength()
+            var levelAgility = hero.agility()
+            var levelInteligence = hero.inteligence()
+
+            itemView.findViewById<TextView>(R.id.hero_title).text = hero.nome
+            itemView.findViewById<TextView>(R.id.hero_inteligence_atribute).text =
+                levelInteligence.toInt().toString()
+            itemView.findViewById<TextView>(R.id.hero_agility_atribute).text =
+                levelAgility.toInt().toString()
+            itemView.findViewById<TextView>(R.id.hero_strength_atribute).text =
+                levelStrength.toInt().toString()
             itemView.findViewById<ImageView>(R.id.hero_image).setImageResource(hero.image)
             itemView.findViewById<ImageView>(R.id.background_hero).setImageResource(drawable)
-           itemView.findViewById<TextView>(R.id.hero_title).text = hero.nome
+            val levelPicker = itemView.findViewById<NumberPicker>(R.id.hero_level)
+            levelPicker.maxValue = 30
+            levelPicker.minValue = 1
+
+            levelPicker.value = hero.level
+            levelPicker.setOnValueChangedListener { _, _, newLevel ->
+                hero.level = newLevel
+                bind(hero)
+            }
         }
     }
 
@@ -52,9 +68,5 @@ class HeroCardListAdapter(
     override fun getItemCount(): Int {
         return heroList.size
     }
-
-    //levelSpinner.adapter = ArrayAdapter(this, R.layout)
-
 }
-
 

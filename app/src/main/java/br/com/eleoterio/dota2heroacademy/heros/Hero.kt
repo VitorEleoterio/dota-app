@@ -6,7 +6,7 @@ import br.com.eleoterio.dota2heroacademy.heros.atributes.PrimaryAtribute.*
 
 abstract class Hero(
     val nome: String,
-    val level: Int,
+    var level: Int,
     val baseAgility: Float,
     val atackSpeed: Float,
     val baseArmor: Float,
@@ -20,10 +20,7 @@ abstract class Hero(
     val primaryAtribute: PrimaryAtribute = PrimaryAtribute.Agility,
     val agilityPerLevel: Float,
     val strengthPerLevel: Float,
-    val integigencePerLevel: Float,
-    val multStrength: Float,
-    val multAgility: Float,
-    val multInteligence: Float,
+    val intelligencePerLevel: Float,
     val image: Int = R.drawable.anti_mage_icon
 ) {
 
@@ -44,20 +41,7 @@ abstract class Hero(
 
     }
 
-    open fun multStrength(){
 
-        multStrength * level + baseStrength
-    }
-
-    open fun multAgility(){
-
-        multAgility * level + baseAgility
-    }
-
-    open fun multInteligence(){
-
-        multInteligence * level + baseInteligence
-    }
 
 
 
@@ -77,7 +61,7 @@ abstract class Hero(
 
     open fun inteligence(): Float {
 
-        return baseInteligence + integigencePerLevel * level
+        return baseInteligence + intelligencePerLevel * level
 
     }
 
