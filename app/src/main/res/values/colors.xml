@@ -11,4 +11,5 @@
     <color name="backgroundFragment">#404345</color>
     <color name="colorWhite">#F9FDFF</color>
     <color name="numberPickerColor">#9A1209</color>
+    <color name="circleColor">#25F6F6F6</color>
 </resources>

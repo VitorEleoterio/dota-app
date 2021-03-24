@@ -33,6 +33,10 @@ class HeroCardListAdapter(
             var levelAgility = hero.agility()
             var levelInteligence = hero.inteligence()
 
+
+
+            itemView.findViewById<TextView>(R.id.hpHero).text = hero.maxHP().toInt().toString()
+
             itemView.findViewById<TextView>(R.id.hero_title).text = hero.nome
             itemView.findViewById<TextView>(R.id.hero_inteligence_atribute).text =
                 levelInteligence.toInt().toString()
@@ -68,5 +72,6 @@ class HeroCardListAdapter(
     override fun getItemCount(): Int {
         return heroList.size
     }
+
 }
 

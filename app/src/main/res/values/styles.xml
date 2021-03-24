@@ -27,5 +27,11 @@
         <item name="fontFamily">@font/seoulhangang_light</item>
     </style>
 
+    <style name="AppTheme.Picker" parent="Theme.AppCompat.Light.NoActionBar" >
+        <item name="android:textColorPrimary">#FFFFFF</item>
+        <item name="android:textSize">24dp</item>
+        <item name="fontFamily">@font/seoulhangang_bold</item>
+
+    </style>
 
 </resources>
