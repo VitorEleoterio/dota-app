@@ -22,3 +22,4 @@ class HeroListFragmentAdapter(fragmentActivity: FragmentActivity): FragmentState
 
 
 
+

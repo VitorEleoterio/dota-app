@@ -2,6 +2,7 @@ package br.com.eleoterio.dota2heroacademy.activity
 
 import android.os.Bundle
 import android.telecom.Call
+import android.util.Log
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import br.com.eleoterio.dota2heroacademy.R
@@ -22,10 +23,12 @@ class DateActivity  : AppCompatActivity() {
 
     fun getData() {
         val retrofitClient = NetworkUtils
-            .getRetrofitInstance("https://api.opendota.com/api")
+            .getRetrofitInstance("https://api.opendota.com/api/")
 
         val endpoint = retrofitClient.create(Endpoint::class.java)
         val callback = endpoint.getPosts()
 
+        Log.d("Response", "getData: ")
     }
 }
+

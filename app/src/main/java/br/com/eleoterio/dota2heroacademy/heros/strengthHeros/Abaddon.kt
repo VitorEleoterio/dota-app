@@ -23,7 +23,7 @@ class Abaddon(
     baseAtackDamage = 29f,
     primaryAtribute = PrimaryAtribute.Strength,
     agilityPerLevel = 2.8f,
-    strengthPerLevel = 1f,
+    strengthPerLevel = 5f,
     intelligencePerLevel = 2f
 
 ) {

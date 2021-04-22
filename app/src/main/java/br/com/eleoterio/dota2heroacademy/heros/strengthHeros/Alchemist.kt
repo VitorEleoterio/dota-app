@@ -23,7 +23,7 @@ class Alchemist(
     baseAtackDamage = 29f,
     primaryAtribute = PrimaryAtribute.Strength,
     agilityPerLevel = 2.8f,
-    strengthPerLevel = 1f,
+    strengthPerLevel = 3f,
     intelligencePerLevel = 2f
 
 ) {
